@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 50px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        #portfolio-details {
+            display: none;
+        }
+    </style>
+    <script>
+        function showDetails() {
+            document.getElementById('portfolio-details').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio" onclick="showDetails()">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to my portfolio website.</p>
+    </section>
+    
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Click to see my details.</p>
+        <div id="portfolio-details">
+            <p>Name: Chiranjeevi R</p>
+            <p>Skills: Web Development, UI/UX Design, JavaScript</p>
+            <p>Experience: 5 years in the industry</p>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About</h2>
+        <p>Learn more about me.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Services</h2>
+        <p>These are the services I offer.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Get in touch with me.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
